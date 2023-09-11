@@ -1,7 +1,7 @@
-import { cakeReducer } from "./cakeReducer";
-import { iceCreamReducer } from "./iceCreamReducers";
+import { cakeReducer } from "./cakeReducer.js";
+import { iceCreamReducer } from "./iceCreamReducers.js";
 import { combineReducers } from "redux";
-export default combineReducers({
+export const rootReducers = combineReducers({
   iceCreamReducer,
   cakeReducer,
 });
