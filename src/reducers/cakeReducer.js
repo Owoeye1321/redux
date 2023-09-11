@@ -1,9 +1,9 @@
-import { BUY_CAKE, EAT_CAKE } from "../resources/types.js";
-const initialState = {
+import { BUY_CAKE, EAT_CAKE, BUY_ICECREAM } from "../resources/types.js";
+const initialCakeState = {
   numberOfCakesSold: 12,
   numberOfCakesEaten: 3,
 };
-export const cakeReducer = (previousState = initialState, action) => {
+export const cakeReducer = (previousState = initialCakeState, action) => {
   switch (action.type) {
     case BUY_CAKE: {
       return {

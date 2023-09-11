@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware, compose } from "redux";
 import { cakeReducer } from "../reducers/cakeReducer.js";
-import { buyCake, eatCake } from "../actions/cakeAction.js";
+import { buyCake, buyIceCream, eatCake } from "../actions/cakeAction.js";
 import logger from "redux-logger";
 const store = createStore(
   cakeReducer,
@@ -13,9 +13,7 @@ const unsubscribe = store.subscribe(() => {
 const callAction = async () => {
   store.dispatch(await buyCake());
   store.dispatch(await eatCake());
-  store.dispatch(await buyCake());
-  store.dispatch(await eatCake());
-
+  store.dispatch(await buyIceCream());
   unsubscribe();
 };
 callAction();
