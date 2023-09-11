@@ -1,3 +1,6 @@
 export const BUY_CAKE = "BUY_CAKE";
 export const EAT_CAKE = "EAT_CAKE";
 export const BUY_ICECREAM = "BUY_ICECREAM";
+export const FETCH_USER_REQUEST = "FETCH_USER_REQUEST";
+export const FETCH_USER_SUCCESS = "FETCH_USER_SUCCESS";
+export const FETCH_USER_FAILED = "FETCH_USER_FAILED";
